@@ -11,10 +11,12 @@ choice = {"R" : "Rock", "P" : "Paper", "S" : "Scissor"}
 
 #choosing winner
 def winner(user_choice, comp_choice):
-  if (user_choice != "R") and (user_choice != "P") and (user_choice != "S"):
+  if \
+  (user_choice != "R") and (user_choice != "P") and (user_choice != "S"):
     print ("Invalid Choice")
   # Tie
-  elif (user_choice == comp_choice):
+  elif \
+  (user_choice == comp_choice):
     print ("User chooses: %s") % (choice[str(user_choice)])
     sleep(1)
     print (".\n.\n.")
